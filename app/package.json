@@ -1,0 +1,17 @@
+{
+  "name": "Shimclimbing",
+  "productName": "ShimClimbing",
+  "version": "0.1.3",
+  "description": "It is a program that manages indoor climbing customers and sales history.",
+  "main": "./main.prod.js",
+  "author": {
+    "name": "Kang Ji hoon",
+    "email": "wlgns5376@gmail.com"
+  },
+  "scripts": {
+    "electron-rebuild": "node -r babel-register ../internals/scripts/ElectronRebuild.js",
+    "postinstall": "npm run electron-rebuild"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}

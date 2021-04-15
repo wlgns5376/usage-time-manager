@@ -1,0 +1,119 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+@import "~font-awesome/css/font-awesome.css";
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+html {
+    height: 100%;
+}
+body {
+    /*background:#e2e2e2;*/
+    background:#eeeeee;
+}
+body, #root {
+    height: 100%;
+}
+.App {
+    height:100%;
+    padding-top: 56px;
+}
+.App-body {
+    overflow-y: auto;
+    height: 100%;
+}
+.App-title {
+    font-size: 1.2em;
+}
+.App-header {
+    -webkit-app-region: drag;
+    max-height: 56px;
+}
+.App-header button,
+.App-header a {
+    -webkit-app-region: no-drag;
+}
+
+.window-title-buttons {
+    position: absolute;
+    top:0;
+    right:0;
+}
+.App .window-title-buttons button {
+    color: #fff;
+    background-color: transparent;
+}
+.App .window-title-buttons button:hover {
+    background-color: #54595f;
+}
+
+.modal-add-user .text-timer {
+  font-size: 1.2em;
+}
+.modal-add-user .text-price {
+  font-size: 1.4em;
+}
+.user-list .card {
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    border: 1px solid rgba(0, 0, 0, 0.48);
+    /*background: rgb(224, 248, 255);*/
+    background: rgb(212, 234, 241);
+    /*background: #e9ecef;*/
+    font-size: 1.1rem;
+}
+
+.user-list .card .card-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.48);
+}
+.modal-payment p {
+    font-size: 1.3em;
+}
+
+.modal-payment input.form-control {
+    border-right: 0;
+    font-size: 1.4em;
+    text-align: right;
+    max-width: 160px;
+}
+.modal-payment .input-group-text {
+    background: #fff;
+    font-size: 1.2em;
+}
+
+.App .bd-sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 4rem;
+    z-index: 1000;
+    height: calc(100vh - 4rem);
+}
+.App .table_sales th,
+.App .table_sales td {
+    border-color: #c1c1c1;
+}
+
+.App .pagination a {
+    color: #212529;
+}
+.loading-view .fa{
+    color: #5c83ad;
+}
+
+@media (min-width: 1200px) {
+    .App .bd-sidebar {
+        -ms-flex: 0 1 320px;
+        flex: 0 1 320px;
+    }
+}
+
+@media (min-width: 992px) {
+    .modal-add-user.modal-dialog {
+        max-width: 600px;
+    }
+    .modal-add-user .modal-body {
+        padding:2rem 1rem 1rem 1rem;
+    }
+}
